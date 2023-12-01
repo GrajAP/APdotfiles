@@ -33,10 +33,10 @@
     "dide.s_h": 0,
     "didest.s_h": 0,
     "distortion2.s_h": 0,
-    "dubber.loadfile1": "",
-    "dubber.loadfile2": "",
-    "dubber.loadfile3": "",
-    "dubber.loadfile4": "",
+    "dubber.loadfile1": "tape1",
+    "dubber.loadfile2": "tape2",
+    "dubber.loadfile3": "tape3",
+    "dubber.loadfile4": "tape4",
     "dubber.s_h": 0,
     "dubber.savefile": 0,
     "duckDelay.s_h": 0,
@@ -1082,7 +1082,7 @@
       "seq.tom.dsp.Gain1": -20,
       "seq.tom.dsp.Gain2": -20,
       "seq.tom.dsp.Gainf": -20,
-      "seq.tom.dsp.freq": 90,
+      "seq.tom.dsp.freq": 150,
       "seq.tom.dsp.gate": 0,
       "shaper.on_off": 0,
       "shaper.sharper": 1,
@@ -1331,7 +1331,7 @@
     "output2": [],
     "midi_input": [],
     "midi_output": [],
-    "insert_out": [],
-    "insert_in": []
+    "insert_out": ["%F:in_0"],
+    "insert_in": ["%A:out_0"]
   }
 ]
