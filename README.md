@@ -1,2 +1,0 @@
-# APdotfiles
-arch dotfiles
