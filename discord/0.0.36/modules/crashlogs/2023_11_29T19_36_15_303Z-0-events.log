@@ -96,3 +96,16 @@
 
 ----------------------------------------------
 2023-11-30T20:56:10.442Z 14: window.close win2
+2023-12-01T16:21:27.383Z 0: 
+
+----------------------------------------------
+2023-12-01T16:21:27.528Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.36"}, modulepath: /home/grajap/.config/discord/0.0.36/modules
+2023-12-01T16:21:27.557Z 2: ✅ webContents.created web1 ""
+2023-12-01T16:21:27.584Z 3: ✅ window.created win1 "discord"
+2023-12-01T16:21:27.802Z 4: ✅ webContents.did-finish-load web1
+2023-12-01T16:21:28.120Z 5: ✅ webContents.created web2 ""
+2023-12-01T16:21:28.144Z 6: ✅ window.created win2 "Discord"
+2023-12-01T16:21:30.375Z 7: ✅ webContents.did-finish-load web2
+2023-12-01T16:21:30.474Z 8: window.close win1
+2023-12-01T16:21:30.551Z 9: webContents.destroyed web1
+2023-12-01T16:21:30.574Z 10: window.closed win1
