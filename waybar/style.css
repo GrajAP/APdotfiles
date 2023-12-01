@@ -8,12 +8,12 @@
     padding-right: 10px;
 }
 
-window#waybar.kitty {
+window#waybar.alacritty {
     background-color: #111111;
     color: #ffffff;
 }
 
-window#waybar.chromium {
+window#waybar.firefox {
     background-color: #eeeeee;
     color: #000000;
 }
@@ -46,7 +46,7 @@ window#waybar.chromium {
 
   #custom-vpn,
   #network {
-    color: #ca9ee6;
+    color: #74c7ec;
   }
 
   #cpu {
@@ -62,7 +62,7 @@ window#waybar.chromium {
   #workspaces button {
     background-color: transparent;
     /* Use box-shadow instead of border so the text isn't offset */
-    color: #89b4fa;
+    color: #cba6f7;
     padding-left: 10px;
     box-shadow: inset 0 -3px transparent;
     transition: all 400ms cubic-bezier(0.250, 0.250, 0.555, 1.425);
@@ -82,7 +82,7 @@ window#waybar.chromium {
   }
 
   #workspaces button.active {
-    color: #f9e2af;
+    color: #f5e0dc;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
   }
   #workspaces button.urgent {
@@ -121,7 +121,7 @@ window#waybar.chromium {
     font-size: 18px;
   }
   #custom-lock {
-    color: #89b4fa;
+    color: #fab387;
   }
   #window{
     font-weight: 700;

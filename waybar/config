@@ -30,11 +30,11 @@
          "warp-on-scroll": false,
          "format":  "{icon}",
          "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
+             "1": "",
+             "2": "󰈹",
+             "3": "",
+             "4": "󰓇",
+             "5": "",
              "urgent": "",
              "focused": "",
              "default": ""
@@ -68,11 +68,10 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "({signalStrength}%) ",
-        "format-ethernet": "",
+        "format-ethernet": "󰈀",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{cidr}"
     },
     "pulseaudio": {
         "scroll-step": 5, // %, can be a float
