@@ -568,3 +568,19 @@
 2023-12-01T16:21:30.420Z [Modules] Host is up to date.
 2023-12-01T16:21:30.420Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
 2023-12-01T16:21:30.422Z [Modules] No module updates available.
+2023-12-01T16:29:09.944Z [Modules] Modules initializing
+2023-12-01T16:29:09.944Z [Modules] Distribution: remote
+2023-12-01T16:29:09.944Z [Modules] Host updates: enabled
+2023-12-01T16:29:09.944Z [Modules] Module updates: enabled
+2023-12-01T16:29:09.944Z [Modules] Module install path: /home/grajap/.config/discord/0.0.36/modules
+2023-12-01T16:29:09.944Z [Modules] Module installed file path: /home/grajap/.config/discord/0.0.36/modules/installed.json
+2023-12-01T16:29:09.944Z [Modules] Module download path: /home/grajap/.config/discord/0.0.36/modules/pending
+2023-12-01T16:29:10.935Z [Modules] No updates to install
+2023-12-01T16:29:10.935Z [Modules] Checking for host updates.
+2023-12-01T16:29:11.367Z [Modules] Host is up to date.
+2023-12-01T16:29:11.368Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-01T16:29:11.418Z [Modules] No module updates available.
+2023-12-01T16:29:13.955Z [Modules] Checking for host updates.
+2023-12-01T16:29:14.153Z [Modules] Host is up to date.
+2023-12-01T16:29:14.154Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-01T16:29:14.156Z [Modules] No module updates available.
