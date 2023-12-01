@@ -122,3 +122,34 @@
 2023-12-01T16:29:14.181Z 8: window.close win1
 2023-12-01T16:29:14.210Z 9: webContents.destroyed web1
 2023-12-01T16:29:14.214Z 10: window.closed win1
+2023-12-01T16:58:48.824Z 0: 
+
+----------------------------------------------
+2023-12-01T17:00:28.569Z 11: before-quit
+2023-12-01T17:01:02.741Z 0: 
+
+----------------------------------------------
+2023-12-01T17:01:02.968Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.36"}, modulepath: /home/grajap/.config/discord/0.0.36/modules
+2023-12-01T17:01:03.008Z 2: ✅ webContents.created web1 "index.html"
+2023-12-01T17:01:03.119Z 3: ✅ window.created win1 "discord"
+2023-12-01T17:01:03.221Z 4: ✅ webContents.did-finish-load web1
+2023-12-01T17:01:03.628Z 5: ✅ webContents.created web2 ""
+2023-12-01T17:01:03.652Z 6: ✅ window.created win2 "Discord"
+2023-12-01T17:01:16.899Z 7: ✅ webContents.did-finish-load web2
+2023-12-01T17:01:16.999Z 8: window.close win1
+2023-12-01T17:01:17.082Z 9: webContents.destroyed web1
+2023-12-01T17:01:17.086Z 10: window.closed win1
+2023-12-01T17:14:24.376Z 11: before-quit
+2023-12-01T17:15:05.516Z 0: 
+
+----------------------------------------------
+2023-12-01T17:15:05.544Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.36"}, modulepath: /home/grajap/.config/discord/0.0.36/modules
+2023-12-01T17:15:05.550Z 2: ✅ webContents.created web1 ""
+2023-12-01T17:15:05.691Z 3: ✅ window.created win1 "discord"
+2023-12-01T17:15:05.892Z 4: ✅ webContents.did-finish-load web1
+2023-12-01T17:15:06.429Z 5: ✅ webContents.created web2 ""
+2023-12-01T17:15:06.447Z 6: ✅ window.created win2 "Discord"
+2023-12-01T17:15:18.687Z 7: ✅ webContents.did-finish-load web2
+2023-12-01T17:15:18.786Z 8: window.close win1
+2023-12-01T17:15:18.860Z 9: webContents.destroyed web1
+2023-12-01T17:15:18.863Z 10: window.closed win1
