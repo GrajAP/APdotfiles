@@ -35,27 +35,16 @@
              "3": "",
              "4": "󰓇",
              "5": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
+
          },
          "persistent-workspaces" : {
             "*" : 5
           }
 
      },
-
-    "hyprland/window": {
-    //"format": "👉 {}",
-     "format": " <span font_desc='Iosevka Raven 12'>{:.40}</span> ",
-    "rewrite": {
-        "(.*) — Mozilla Firefox": "🌎 $1",
-        "(.*) - Alacritty": "> [$1]"
-    },
-    "separate-outputs": true
-},      
-    "clock": {
+       "clock": {
         "timezone": "Europe/Warsaw",
+	"on-click": "xdg-open https://calendar.google.com/calendar/",
 	"format": "{:%H %M}",
         "tooltip-format": "<big>{:%Y %B}</big>
             <tt><small>{calendar}</small></tt>",
@@ -72,29 +61,23 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
+        "on-click": "killall nm-connection-editor || nm-connection-editor"
     },
     "pulseaudio": {
         "scroll-step": 5, // %, can be a float
         "format": "{icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "killall pavucontrol || pavucontrol"
     },
     "custom/lock" : 
     {
-        "tooltip-format" : "false",
+        "tooltip-format" : "",
         "on-click" : "sh -c '(sleep 0.5s; gtklock)' & disown",
         "format" : ""
     },
@@ -221,6 +204,7 @@
           tooltip-format : ''
             <big>{:%Y %B}</big>
             <tt><small>{calendar}</small></tt>''
+	
         }
         backlight : {
           format : "{icon}"
