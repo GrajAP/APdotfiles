@@ -1,144 +1,513 @@
-[2023-12-01 18:01:04.873] [1516] (engine.cpp:385): Created native Engine, time: Fri Dec  1 18:01:04 2023 CET, logPath: /home/grajap/.config/discord/0.0.36/modules/discord_voice/, logLevel: 2
-[2023-12-01 18:01:04.916] [1516] (audio_processing_impl.cc:295): Injected APM submodules:
+[2023-12-03 15:18:23.455] [40107] (engine.cpp:385): Created native Engine, time: Sun Dec  3 15:18:23 2023 CET, logPath: /home/grajap/.config/discord/0.0.36/modules/discord_voice/, logLevel: 2
+[2023-12-03 15:18:23.456] [40107] (audio_processing_impl.cc:295): Injected APM submodules:
 Echo control factory: 0
 Echo detector: 0
 Capture analyzer: 0
 Capture post processor: 0
 Render pre processor: 0
-[2023-12-01 18:01:04.916] [1516] (audio_processing_impl.cc:304): Denormal disabler: supported
-[2023-12-01 18:01:04.917] [1516] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
-[2023-12-01 18:01:04.918] [1516] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
-[2023-12-01 18:01:04.918] [1516] (audio_device_impl.cc:143): current platform is Linux
-[2023-12-01 18:01:04.918] [1516] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
-[2023-12-01 18:01:04.918] [1516] (audio_device_impl.cc:991): PlatformAudioLayer
-[2023-12-01 18:01:04.918] [1516] (audio_device_impl.cc:298): PulseAudio support is enabled.
-[2023-12-01 18:01:04.918] [1516] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
-[2023-12-01 18:01:04.918] [1516] (audio_device_impl.cc:344): AttachAudioBuffer
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:203): SetRecordingChannels(0)
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
-[2023-12-01 18:01:04.919] [1516] (audio_device_impl.cc:354): ActiveAudioLayer
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
-[2023-12-01 18:01:04.919] [1516] (audio_device_impl.cc:143): current platform is Linux
-[2023-12-01 18:01:04.919] [1516] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
-[2023-12-01 18:01:04.919] [1516] (audio_device_impl.cc:991): PlatformAudioLayer
-[2023-12-01 18:01:04.919] [1516] (audio_device_impl.cc:298): PulseAudio support is enabled.
-[2023-12-01 18:01:04.919] [1516] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
-[2023-12-01 18:01:04.919] [1516] (audio_device_impl.cc:344): AttachAudioBuffer
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:203): SetRecordingChannels(0)
-[2023-12-01 18:01:04.919] [1516] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
-[2023-12-01 18:01:04.919] [1516] (audio_processing_impl.cc:295): Injected APM submodules:
+[2023-12-03 15:18:23.456] [40107] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2023-12-03 15:18:23.456] [40107] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:143): current platform is Linux
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:991): PlatformAudioLayer
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:344): AttachAudioBuffer
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:354): ActiveAudioLayer
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:143): current platform is Linux
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:991): PlatformAudioLayer
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:344): AttachAudioBuffer
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2023-12-03 15:18:23.456] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2023-12-03 15:18:23.456] [40107] (audio_processing_impl.cc:295): Injected APM submodules:
 Echo control factory: 0
 Echo detector: 0
 Capture analyzer: 0
 Capture post processor: 0
 Render pre processor: 0
-[2023-12-01 18:01:04.919] [1516] (audio_processing_impl.cc:304): Denormal disabler: supported
-[2023-12-01 18:01:04.919] [1516] (audio_engine.cpp:528): Creating audio engine: standard
-[2023-12-01 18:01:04.919] [1516] (audio_device_impl.cc:364): Init
-[2023-12-01 18:01:04.923] [1516] (audio_device_impl.cc:364): Init
-[2023-12-01 18:01:04.926] [1516] (audio_coding.cpp:149): Using software Opus decoder
-[2023-12-01 18:01:04.926] [1516] (audio_coding.cpp:166): Using software Opus encoder
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:895): RegisterAudioCallback
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
-[2023-12-01 18:01:04.926] [1516] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:895): RegisterAudioCallback
-[2023-12-01 18:01:04.926] [1516] (audio_engine.cpp:189): Setting audio input device: 'default'
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:578): SetStereoRecording(1)
-[2023-12-01 18:01:04.926] [1516] (audio_device_buffer.cc:203): SetRecordingChannels(2)
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:776): SetRecordingDevice(0)
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:566): StereoRecordingIsAvailable
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:573): output: 1
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:578): SetStereoRecording(1)
-[2023-12-01 18:01:04.926] [1516] (audio_device_buffer.cc:203): SetRecordingChannels(2)
-[2023-12-01 18:01:04.926] [1516] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
-[2023-12-01 18:01:04.926] [1516] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
-[2023-12-01 18:01:04.926] [1516] (audio_engine.cpp:206): Setting audio output device: 'default'
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:708): SetPlayoutDevice(0)
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:619): output: 1
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:624): SetStereoPlayout(1)
-[2023-12-01 18:01:04.926] [1516] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:911): BuiltInAECIsAvailable
-[2023-12-01 18:01:04.926] [1516] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
-[2023-12-01 18:01:04.926] [1516] (audio_device_impl.cc:914): output: 0
-[2023-12-01 18:01:04.926] [1516] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
-[2023-12-01 18:01:04.930] [1516] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
-[2023-12-01 18:01:04.930] [1516] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
-[2023-12-01 18:01:04.930] [1516] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
-[2023-12-01 18:01:04.930] [1516] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
-[2023-12-01 18:01:04.930] [1516] (agc_manager_direct.cc:500): [agc] analog controller enabled: yes
-[2023-12-01 18:01:04.930] [1516] (agc_manager_direct.cc:503): [agc] Min mic level: 12 (overridden: no)
-[2023-12-01 18:01:04.930] [1516] (agc_manager_direct.cc:507): [agc] Startup min volume: 0
-[2023-12-01 18:01:04.930] [1516] (captured_audio_processor.cpp:115): SetNoiseCancellation: 0
-[2023-12-01 18:01:04.930] [1516] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
-[2023-12-01 18:01:04.932] [1516] (field_trial.cc:141): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
-[2023-12-01 18:01:04.935] [1516] (audio_engine.cpp:189): Setting audio input device: 'Starship/Matisse HD Audio Controller Analogowe stereo'
-[2023-12-01 18:01:04.935] [1516] (audio_device_impl.cc:826): RecordingIsInitialized
-[2023-12-01 18:01:04.935] [1516] (audio_device_impl.cc:578): SetStereoRecording(1)
-[2023-12-01 18:01:04.935] [1516] (audio_device_buffer.cc:203): SetRecordingChannels(2)
-[2023-12-01 18:01:04.935] [1516] (audio_device_impl.cc:788): SetRecordingDevice
-[2023-12-01 18:01:04.935] [1516] (audio_device_generic.cc:67): SetRecordingDevice: Not supported on this platform
-[2023-12-01 18:01:04.937] [1516] (audio_device_impl.cc:776): SetRecordingDevice(3)
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:566): StereoRecordingIsAvailable
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:573): output: 1
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:578): SetStereoRecording(1)
-[2023-12-01 18:01:04.938] [1516] (audio_device_buffer.cc:203): SetRecordingChannels(2)
-[2023-12-01 18:01:04.938] [1516] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
-[2023-12-01 18:01:04.938] [1516] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
-[2023-12-01 18:01:04.938] [1516] (audio_engine.cpp:206): Setting audio output device: 'default'
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:820): PlayoutIsInitialized
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:708): SetPlayoutDevice(0)
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:619): output: 1
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:624): SetStereoPlayout(1)
-[2023-12-01 18:01:04.938] [1516] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
-[2023-12-01 18:01:04.938] [1516] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
-[2023-12-01 18:01:04.938] [1516] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
-[2023-12-01 18:01:04.938] [1516] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:192): *** OnDevicesChanged:
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:193): * audioInput:
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:196): - JBL Quantum350 Wireless Mono ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:198): * audioOutput:
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:192): *** OnDevicesChanged:
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:193): * audioInput:
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:196): - JBL Quantum350 Wireless Mono ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:198): * audioOutput:
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:201): - default: JBL Quantum350 Wireless Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
-[2023-12-01 18:01:04.938] [1516] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
-[2023-12-01 18:01:05.044] [1516] (audio_engine.cpp:189): Setting audio input device: 'Starship/Matisse HD Audio Controller Analogowe stereo'
-[2023-12-01 18:01:05.044] [1516] (audio_device_impl.cc:826): RecordingIsInitialized
-[2023-12-01 18:01:05.044] [1516] (audio_device_impl.cc:578): SetStereoRecording(1)
-[2023-12-01 18:01:05.044] [1516] (audio_device_buffer.cc:203): SetRecordingChannels(2)
-[2023-12-01 18:01:05.044] [1516] (audio_device_impl.cc:788): SetRecordingDevice
-[2023-12-01 18:01:05.044] [1516] (audio_device_generic.cc:67): SetRecordingDevice: Not supported on this platform
-[2023-12-01 18:01:05.046] [1516] (audio_device_impl.cc:776): SetRecordingDevice(3)
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:566): StereoRecordingIsAvailable
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:573): output: 1
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:578): SetStereoRecording(1)
-[2023-12-01 18:01:05.047] [1516] (audio_device_buffer.cc:203): SetRecordingChannels(2)
-[2023-12-01 18:01:05.047] [1516] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
-[2023-12-01 18:01:05.047] [1516] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
-[2023-12-01 18:01:05.047] [1516] (audio_engine.cpp:206): Setting audio output device: 'default'
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:820): PlayoutIsInitialized
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:708): SetPlayoutDevice(0)
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:619): output: 1
-[2023-12-01 18:01:05.047] [1516] (audio_device_impl.cc:624): SetStereoPlayout(1)
-[2023-12-01 18:01:05.047] [1516] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
-[2023-12-01 18:01:05.060] [1315] (discord.cpp:765): JS console: ["Initializing krisp module"]
+[2023-12-03 15:18:23.456] [40107] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2023-12-03 15:18:23.456] [40107] (audio_engine.cpp:528): Creating audio engine: standard
+[2023-12-03 15:18:23.456] [40107] (audio_device_impl.cc:364): Init
+[2023-12-03 15:18:23.462] [40107] (audio_device_impl.cc:364): Init
+[2023-12-03 15:18:23.464] [40107] (audio_coding.cpp:149): Using software Opus decoder
+[2023-12-03 15:18:23.464] [40107] (audio_coding.cpp:166): Using software Opus encoder
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:895): RegisterAudioCallback
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2023-12-03 15:18:23.464] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:895): RegisterAudioCallback
+[2023-12-03 15:18:23.464] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:18:23.464] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:18:23.464] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:18:23.464] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 15:18:23.464] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:18:23.464] [40107] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-12-03 15:18:23.464] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-03 15:18:23.465] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 15:18:23.465] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 15:18:23.465] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 15:18:23.465] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 15:18:23.465] [40107] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2023-12-03 15:18:23.465] [40107] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2023-12-03 15:18:23.465] [40107] (audio_device_impl.cc:914): output: 0
+[2023-12-03 15:18:23.465] [40107] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-12-03 15:18:23.465] [40107] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2023-12-03 15:18:23.465] [40107] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2023-12-03 15:18:23.465] [40107] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-12-03 15:18:23.465] [40107] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[2023-12-03 15:18:23.465] [40107] (agc_manager_direct.cc:500): [agc] analog controller enabled: yes
+[2023-12-03 15:18:23.465] [40107] (agc_manager_direct.cc:503): [agc] Min mic level: 12 (overridden: no)
+[2023-12-03 15:18:23.465] [40107] (agc_manager_direct.cc:507): [agc] Startup min volume: 0
+[2023-12-03 15:18:23.465] [40107] (captured_audio_processor.cpp:115): SetNoiseCancellation: 0
+[2023-12-03 15:18:23.465] [40107] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2023-12-03 15:18:23.465] [40107] (field_trial.cc:141): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2023-12-03 15:18:23.564] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 15:18:23.564] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 15:18:23.564] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:18:23.564] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:18:23.564] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 15:18:23.565] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 15:18:23.565] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 15:18:23.565] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:18:23.565] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:18:23.565] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 15:18:23.565] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 15:18:23.565] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:18:23.565] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 15:18:23.565] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 15:18:23.565] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 15:18:23.565] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 15:18:23.567] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(2)
+[2023-12-03 15:18:23.567] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 15:18:23.567] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 15:18:23.567] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 15:18:23.567] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 15:18:23.567] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 15:18:23.567] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 15:18:23.567] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:18:23.670] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 15:18:23.670] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 15:18:23.670] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:18:23.670] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:18:23.670] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 15:18:23.670] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 15:18:23.671] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 15:18:23.671] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:18:23.671] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:18:23.671] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 15:18:23.671] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 15:18:23.671] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:18:23.671] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 15:18:23.671] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 15:18:23.671] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 15:18:23.671] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 15:18:23.673] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(2)
+[2023-12-03 15:18:23.673] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 15:18:23.673] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 15:18:23.673] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 15:18:23.673] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 15:18:23.675] [39995] (discord.cpp:765): JS console: ["Initializing krisp module"]
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:196): - default: auto_null.monitor ()
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:201): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:196): - default: auto_null.monitor ()
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:201): - default: Głuche wyjście ()
+[2023-12-03 15:36:12.811] [40107] (engine.cpp:201): - Głuche wyjście ()
+[2023-12-03 15:36:12.818] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 15:36:12.818] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 15:36:12.818] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:36:12.818] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:36:12.818] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 15:36:12.818] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 15:36:12.818] [40107] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-03 15:36:12.818] [40107] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-03 15:36:12.818] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-03 15:36:12.818] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 15:36:12.818] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 15:36:12.818] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:36:12.831] [40107] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-12-03 15:36:12.831] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 15:36:12.831] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-03 15:36:12.831] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 15:36:12.831] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 15:36:12.831] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 15:36:12.831] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:196): - JBL Quantum350 Wireless Mono ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:201): - default: Głuche wyjście ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:201): - Głuche wyjście ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:196): - JBL Quantum350 Wireless Mono ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:201): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 15:36:20.827] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 15:36:20.828] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 15:36:20.828] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 15:36:20.828] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:36:20.828] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:36:20.828] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 15:36:20.828] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 15:36:20.828] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 15:36:20.828] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:36:20.828] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:36:20.828] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 15:36:20.828] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 15:36:20.828] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:36:20.829] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 15:36:20.829] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 15:36:20.829] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 15:36:20.829] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 15:36:20.831] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(3)
+[2023-12-03 15:36:20.832] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 15:36:20.832] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 15:36:20.832] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 15:36:20.832] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:196): - JBL Quantum350 Wireless Mono ()
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:201): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 15:37:59.950] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 15:37:59.950] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 15:37:59.950] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 15:37:59.950] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 15:37:59.950] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 15:37:59.953] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(2)
+[2023-12-03 15:37:59.953] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 15:37:59.954] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 15:37:59.954] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 15:37:59.954] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 15:38:34.982] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:38:34.982] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:38:34.982] [40107] (engine.cpp:196): - default: auto_null.monitor ()
+[2023-12-03 15:38:34.982] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:38:34.982] [40107] (engine.cpp:201): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:38:34.982] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:38:34.982] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 15:38:34.982] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 15:38:34.983] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 15:38:34.983] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:38:34.983] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:38:34.983] [40107] (engine.cpp:196): - default: auto_null.monitor ()
+[2023-12-03 15:38:34.983] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:38:34.983] [40107] (engine.cpp:201): - default: Głuche wyjście ()
+[2023-12-03 15:38:34.983] [40107] (engine.cpp:201): - Głuche wyjście ()
+[2023-12-03 15:38:34.983] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 15:38:34.983] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 15:38:34.983] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:38:34.983] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:38:34.983] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 15:38:34.983] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 15:38:34.983] [40107] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-03 15:38:34.983] [40107] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-03 15:38:34.983] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-03 15:38:34.983] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 15:38:34.983] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 15:38:34.983] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:38:34.984] [40107] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-12-03 15:38:34.984] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 15:38:34.984] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-03 15:38:34.984] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 15:38:34.984] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 15:38:34.984] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 15:38:34.984] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 15:38:46.006] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:38:46.006] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:38:46.006] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:38:46.006] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:38:46.006] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 15:38:46.006] [40107] (engine.cpp:196): - JBL Quantum350 Wireless Mono ()
+[2023-12-03 15:38:46.006] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:38:46.006] [40107] (engine.cpp:201): - default: Głuche wyjście ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:201): - Głuche wyjście ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:196): - JBL Quantum350 Wireless Mono ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:201): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 15:38:46.007] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 15:38:46.007] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 15:38:46.007] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 15:38:46.007] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:38:46.007] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:38:46.007] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 15:38:46.007] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 15:38:46.008] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 15:38:46.008] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 15:38:46.008] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 15:38:46.008] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 15:38:46.008] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 15:38:46.008] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 15:38:46.008] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 15:38:46.008] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 15:38:46.008] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 15:38:46.008] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 15:38:46.011] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(3)
+[2023-12-03 15:38:46.011] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 15:38:46.012] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 15:38:46.012] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 15:38:46.012] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:196): - JBL Quantum350 Wireless Mono ()
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:201): - default: JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:36:48.034] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 16:36:48.035] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 16:36:48.035] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 16:36:48.035] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 16:36:48.035] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 16:36:48.036] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(3)
+[2023-12-03 16:36:48.037] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 16:36:48.037] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 16:36:48.037] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 16:36:48.037] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - default: JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 16:37:19.065] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:19.066] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 16:37:19.066] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 16:37:19.066] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 16:37:19.066] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 16:37:19.066] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 16:37:19.066] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 16:37:19.066] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 16:37:19.066] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 16:37:19.069] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(4)
+[2023-12-03 16:37:19.069] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 16:37:19.069] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 16:37:19.069] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 16:37:19.069] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:196): - default: Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:196): - default: Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:196): - Starship/Matisse HD Audio Controller Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - default: JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 16:37:34.078] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:34.079] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 16:37:34.079] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 16:37:34.079] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 16:37:34.079] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 16:37:34.079] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 16:37:34.079] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 16:37:34.079] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 16:37:34.079] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 16:37:34.081] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(3)
+[2023-12-03 16:37:34.081] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 16:37:34.081] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 16:37:34.081] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 16:37:34.081] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:201): - default: JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:201): - default: JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 16:37:52.097] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 16:37:52.097] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 16:37:52.097] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 16:37:52.097] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 16:37:52.097] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 16:37:52.097] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 16:37:52.097] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 16:37:52.098] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 16:37:52.098] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 16:37:52.098] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 16:37:52.098] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 16:37:52.098] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 16:37:52.098] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 16:37:52.098] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 16:37:52.098] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 16:37:52.098] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 16:37:52.098] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 16:37:52.100] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(2)
+[2023-12-03 16:37:52.100] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 16:37:52.100] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 16:37:52.100] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 16:37:52.100] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:196): - default: auto_null.monitor ()
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:201): - default: JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:196): - default: auto_null.monitor ()
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:201): - default: Głuche wyjście ()
+[2023-12-03 17:09:28.453] [40107] (engine.cpp:201): - Głuche wyjście ()
+[2023-12-03 17:09:28.454] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 17:09:28.454] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 17:09:28.454] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 17:09:28.454] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 17:09:28.454] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 17:09:28.454] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 17:09:28.454] [40107] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2023-12-03 17:09:28.454] [40107] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2023-12-03 17:09:28.454] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2023-12-03 17:09:28.454] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 17:09:28.454] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 17:09:28.454] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 17:09:28.470] [40107] (audio_engine.cpp:206): Setting audio output device: 'default'
+[2023-12-03 17:09:28.470] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 17:09:28.470] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2023-12-03 17:09:28.470] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 17:09:28.470] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 17:09:28.470] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 17:09:28.470] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:201): - default: Głuche wyjście ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:201): - Głuche wyjście ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:192): *** OnDevicesChanged:
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:193): * audioInput:
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:196): - default: Blue Microphones Analogowe stereo ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:196): - Blue Microphones Analogowe stereo ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:198): * audioOutput:
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:201): - default: JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:201): - GA104 High Definition Audio Controller Cyfrowe stereo (HDMI) ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:201): - Starship/Matisse HD Audio Controller Cyfrowe stereo (IEC958) ()
+[2023-12-03 17:10:14.514] [40107] (engine.cpp:201): - JBL Quantum350 Wireless Analogowe stereo ()
+[2023-12-03 17:10:14.514] [40107] (audio_engine.cpp:189): Setting audio input device: 'default'
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:826): RecordingIsInitialized
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 17:10:14.514] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:573): output: 1
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2023-12-03 17:10:14.514] [40107] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2023-12-03 17:10:14.514] [40107] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2023-12-03 17:10:14.514] [40107] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-12-03 17:10:14.514] [40107] (audio_engine.cpp:206): Setting audio output device: 'JBL Quantum350 Wireless Analogowe stereo'
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2023-12-03 17:10:14.514] [40107] (audio_device_impl.cc:720): SetPlayoutDevice
+[2023-12-03 17:10:14.514] [40107] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2023-12-03 17:10:14.517] [40107] (audio_device_impl.cc:708): SetPlayoutDevice(3)
+[2023-12-03 17:10:14.517] [40107] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2023-12-03 17:10:14.518] [40107] (audio_device_impl.cc:619): output: 1
+[2023-12-03 17:10:14.518] [40107] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2023-12-03 17:10:14.518] [40107] (audio_device_buffer.cc:209): SetPlayoutChannels(2)

@@ -1,6 +1,6 @@
-2023/12/01-18:01:02.099 375 Reusing MANIFEST /home/grajap/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2023/12/01-18:01:02.100 375 Recovering log #19
-2023/12/01-18:01:02.100 375 Reusing old log /home/grajap/.config/discord/Local Storage/leveldb/000019.log 
-2023/12/01-18:03:29.140 453 Level-0 table #24: started
-2023/12/01-18:03:29.154 453 Level-0 table #24: 701471 bytes OK
-2023/12/01-18:03:29.157 453 Delete type=0 #19
+2023/12/04-18:05:20.132 6f4 Reusing MANIFEST /home/grajap/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/12/04-18:05:20.133 6f4 Recovering log #40
+2023/12/04-18:05:20.135 6f4 Reusing old log /home/grajap/.config/discord/Local Storage/leveldb/000040.log 
+2023/12/04-17:08:56.707 bbb Level-0 table #44: started
+2023/12/04-17:08:56.733 bbb Level-0 table #44: 2723326 bytes OK
+2023/12/04-17:08:56.736 bbb Delete type=0 #40
