@@ -10,5 +10,9 @@
         "y": 14,
         "width": 1225,
         "height": 1412
-    }
+    },
+    "enableMenu": false,
+    "openLinksWithElectron": true,
+    "splashTheming": false,
+    "skippedUpdate": "0.4.4"
 }

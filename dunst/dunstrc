@@ -1,0 +1,38 @@
+[global]
+frame_color = "#cba6f7"
+separator_color = "#cba6f7"
+width = 300
+height = 280
+offset = "0x15"
+font = "Lexend 12"
+corner_radius = 24
+origin = "top-center"
+notification_limit = 3
+idle_threshold = 120
+ignore_newline = "no"
+mouse_left_click = "close_current"
+mouse_right_click = "close_all"
+sticky_history = "yes"
+history_length = 20
+show_age_threshold = 60
+ellipsize = "middle"
+padding = 8
+always_run_script = true
+frame_width = 2
+progress_bar = true
+progress_bar_frame_width = 0
+highlight = "#cba6f7"
+[urgency_low]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+[fullscreen_delay_everything]
+fullscreen = "delay"
+[urgency_normal]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+timeout = 6
+[urgency_critical]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+frame_color = "#FAB387"
+timeout = 0

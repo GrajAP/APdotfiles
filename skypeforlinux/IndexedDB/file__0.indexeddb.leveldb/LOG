@@ -1,0 +1,6 @@
+2023/12/13-19:25:00.722 49c7 Reusing MANIFEST /home/grajap/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2023/12/13-19:25:00.722 49c7 Recovering log #3
+2023/12/13-19:25:00.761 49c7 Reusing old log /home/grajap/.config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/000003.log 
+2023/12/13-19:25:02.599 49fe Level-0 table #5: started
+2023/12/13-19:25:02.636 49fe Level-0 table #5: 1484257 bytes OK
+2023/12/13-19:25:02.643 49fe Delete type=0 #3

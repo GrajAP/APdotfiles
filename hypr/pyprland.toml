@@ -1,0 +1,26 @@
+[pyprland] 
+plugins = ["scratchpads", "magnify"]
+[scratchpads.term]  
+command = "foot --title scratchpad"
+margin = 50
+unfocus = "hide"
+animation = "fromTop"
+
+[scratchpads.btm ] 
+command = "foot --title scratchpad -e btm"
+margin = 50
+unfocus = "hide"
+animation = "fromTop"
+      
+[scratchpads.spotify ] 
+command = "foot --title scratchpad-spotify -e sh -c 'systemctl --user restart spotifyd; sleep 1; spt'" 
+margin = 50
+unfocus = "hide"
+animation = "fromTop"
+      
+[scratchpads.pavu] 
+command = "pavucontrol"
+margin = 50
+unfocus = "hide"
+animation = "fromTop"
+    

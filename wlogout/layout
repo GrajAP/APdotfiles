@@ -1,0 +1,24 @@
+{
+    "label" : "lock",
+    "action" : "swaylock",
+    "text" : "(L)ock",
+    "keybind" : "l"
+}
+{
+    "label" : "logout",
+    "action" : "killall Hyprland",
+    "text" : "(K)ill Hyprland",
+    "keybind" : "k"
+}
+{
+    "label" : "shutdown",
+    "action" : "shutdown now",
+    "text" : "S(H)utdown",
+    "keybind" : "h",
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "(J)Reboot",
+    "keybind" : "j"
+}

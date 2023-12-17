@@ -1,0 +1,41 @@
+
+theme = "catppuccin_mocha_transparent"
+
+[editor]
+line-number = "relative"
+mouse = false
+color-modes = true
+cursorline = true
+idle-timeout = 1
+scrolloff = 5
+# rainbow-brackets = true
+completion-replace = true
+# cursor-word = true
+bufferline = "always"
+true-color = true
+rulers = [80]
+soft-wrap.enable = true
+indent-guides.render = true
+# sticky-context.enable = false
+
+gutters = ["diagnostics","line-numbers","spacer","diff"]
+
+
+
+[editor.statusline] 
+# mode-separator = "";
+# separator = "";
+left = ["mode", "selections", "spinner", "file-name", "total-line-numbers"]
+center = []
+right = ["diagnostics", "file-encoding", "file-line-ending", "file-type", "position-percentage", "position"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+           # sticky-context.indicator = false
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false

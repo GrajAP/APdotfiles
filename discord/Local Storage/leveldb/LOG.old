@@ -1,6 +1,17 @@
-2023/12/04-18:05:20.132 6f4 Reusing MANIFEST /home/grajap/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2023/12/04-18:05:20.133 6f4 Recovering log #40
-2023/12/04-18:05:20.135 6f4 Reusing old log /home/grajap/.config/discord/Local Storage/leveldb/000040.log 
-2023/12/04-17:08:56.707 bbb Level-0 table #44: started
-2023/12/04-17:08:56.733 bbb Level-0 table #44: 2723326 bytes OK
-2023/12/04-17:08:56.736 bbb Delete type=0 #40
+2023/12/17-23:48:10.583 2a2c Reusing MANIFEST /home/grajap/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/12/17-23:48:10.584 2a2c Recovering log #97
+2023/12/17-23:48:10.584 2a2c Reusing old log /home/grajap/.config/discord/Local Storage/leveldb/000097.log 
+2023/12/18-00:08:29.953 2a2f Level-0 table #101: started
+2023/12/18-00:08:30.005 2a2f Level-0 table #101: 706503 bytes OK
+2023/12/18-00:08:30.007 2a2f Delete type=0 #97
+2023/12/18-00:08:30.008 2a2f Compacting 4@0 + 2@1 files
+2023/12/18-00:08:30.038 2a2f Generated table #102@0: 27 keys, 2721695 bytes
+2023/12/18-00:08:30.065 2a2f Generated table #103@0: 92 keys, 2728808 bytes
+2023/12/18-00:08:30.065 2a2f Compacted 4@0 + 2@1 files => 5450503 bytes
+2023/12/18-00:08:30.068 2a2f compacted to: files[ 0 3 1 0 0 0 0 ]
+2023/12/18-00:08:30.068 2a2f Delete type=2 #93
+2023/12/18-00:08:30.068 2a2f Delete type=2 #98
+2023/12/18-00:08:30.068 2a2f Delete type=2 #90
+2023/12/18-00:08:30.068 2a2f Delete type=2 #101
+2023/12/18-00:08:30.068 2a2f Delete type=2 #89
+2023/12/18-00:08:30.068 2a2f Delete type=2 #96
