@@ -1,0 +1,120 @@
+20:41:33.186: [Safe Mode] Unclean shutdown detected!
+20:41:35.141: [Safe Mode] User elected to launch normally.
+20:41:35.141: Platform: Wayland
+20:41:35.141: CPU Name: AMD Ryzen 9 5900X 12-Core Processor
+20:41:35.141: CPU Speed: 3592.987MHz
+20:41:35.142: Physical Cores: 12, Logical Cores: 24
+20:41:35.142: Physical Memory: 32034MB Total, 24303MB Free
+20:41:35.142: Kernel Version: Linux 6.6.3-zen1-1-zen
+20:41:35.142: Distribution: "Arch Linux" Unknown
+20:41:35.142: Desktop Environment: Hyprland ()
+20:41:35.142: Session Type: wayland
+20:41:35.146: Qt Version: 6.6.1 (runtime), 6.6.0 (compiled)
+20:41:35.146: Portable mode: false
+20:41:35.163: OBS 30.0.0-1 (linux)
+20:41:35.163: ---------------------------------
+20:41:35.163: ---------------------------------
+20:41:35.163: audio settings reset:
+20:41:35.163: 	samples per sec: 48000
+20:41:35.163: 	speakers:        2
+20:41:35.163: 	max buffering:   960 milliseconds
+20:41:35.163: 	buffering type:  dynamically increasing
+20:41:35.164: ---------------------------------
+20:41:35.164: Initializing OpenGL...
+20:41:35.164: Using EGL/Wayland
+20:41:35.164: Initialized EGL 1.5
+20:41:35.189: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3070/PCIe/SSE2
+20:41:35.189: OpenGL loaded successfully, version 3.3.0 NVIDIA 545.29.06, shading language 3.30 NVIDIA via Cg compiler
+20:41:35.206: ---------------------------------
+20:41:35.206: video settings reset:
+20:41:35.206: 	base resolution:   1920x1080
+20:41:35.206: 	output resolution: 1280x720
+20:41:35.206: 	downscale filter:  Bicubic
+20:41:35.206: 	fps:               30/1
+20:41:35.206: 	format:            NV12
+20:41:35.206: 	YUV mode:          Rec. 709/Partial
+20:41:35.206: NV12 texture support not available
+20:41:35.206: P010 texture support not available
+20:41:35.206: Audio monitoring device:
+20:41:35.206: 	name: Domyślne
+20:41:35.206: 	id: default
+20:41:35.206: ---------------------------------
+20:41:35.213: Failed to load 'en-US' text for module: 'decklink-captions.so'
+20:41:35.219: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+20:41:35.225: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+20:41:35.225: Failed to initialize module 'decklink.so'
+20:41:35.324: [pipewire] Available captures:
+20:41:35.324: [pipewire]     - Desktop capture
+20:41:35.324: [pipewire]     - Window capture
+20:41:35.352: NVENC supported
+20:41:35.352: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+20:41:35.414: VAAPI: API version 1.20
+20:41:35.435: FFmpeg VAAPI H264 encoding supported
+20:41:35.496: FFmpeg VAAPI HEVC encoding supported
+20:41:35.634: ---------------------------------
+20:41:35.634:   Loaded Modules:
+20:41:35.634:     text-freetype2.so
+20:41:35.634:     rtmp-services.so
+20:41:35.634:     obs-x264.so
+20:41:35.634:     obs-vst.so
+20:41:35.634:     obs-transitions.so
+20:41:35.634:     obs-qsv11.so
+20:41:35.634:     obs-outputs.so
+20:41:35.634:     obs-libfdk.so
+20:41:35.634:     obs-filters.so
+20:41:35.634:     obs-ffmpeg.so
+20:41:35.634:     linux-v4l2.so
+20:41:35.634:     linux-pulseaudio.so
+20:41:35.634:     linux-pipewire.so
+20:41:35.634:     linux-jack.so
+20:41:35.634:     linux-capture.so
+20:41:35.634:     linux-alsa.so
+20:41:35.634:     image-source.so
+20:41:35.634:     frontend-tools.so
+20:41:35.634:     decklink-output-ui.so
+20:41:35.634:     decklink-captions.so
+20:41:35.634: ---------------------------------
+20:41:35.634: QWidget::setTabOrder: 'first' and 'second' must be in the same window
+20:41:35.634: ==== Startup complete ===============================================
+20:41:35.675: All scene data cleared
+20:41:35.675: ------------------------------------------------
+20:41:35.681: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.0) 15.0.0'
+20:41:35.681: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+20:41:35.681: pulse-input: Started recording from 'alsa_output.usb-JBL_JBL_Quantum350_Wireless_20190706.1-00.analog-stereo.monitor' (default)
+20:41:35.681: [Loaded global audio device]: 'Urządzenie audio'
+20:41:35.681: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.0) 15.0.0'
+20:41:35.681: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+20:41:35.681: pulse-input: Started recording from 'alsa_input.usb-Generic_Blue_Microphones_2108BAB0EPP8-00.analog-stereo' (default)
+20:41:35.681: [Loaded global audio device]: 'Mikrofon/Wejście liniowe'
+20:41:35.681: PipeWire initialized
+20:41:35.682: Switched to scene 'Scena'
+20:41:35.682: ------------------------------------------------
+20:41:35.682: Loaded scenes:
+20:41:35.682: - scene 'Scena':
+20:41:35.682:     - source: 'Przechwytywanie ekranu (PipeWire)' (pipewire-desktop-capture-source)
+20:41:35.682: ------------------------------------------------
+20:41:35.694: [pipewire] Screencast session created
+20:41:36.230: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Urządzenie audio)
+20:41:36.230: 
+20:41:38.248: [pipewire] Asking for desktop
+20:41:38.255: [pipewire] desktop selected, setting up screencast
+20:41:38.260: [pipewire] Server version: 1.0.0
+20:41:38.260: [pipewire] Library version: 1.0.0
+20:41:38.260: [pipewire] Header version: 0.3.84
+20:41:38.260: [pipewire] Created stream 0x55e0374d1a80
+20:41:38.260: [pipewire] Stream 0x55e0374d1a80 state: "connecting" (error: none)
+20:41:38.260: [pipewire] Playing stream 0x55e0374d1a80
+20:41:38.260: [pipewire] Stream 0x55e0374d1a80 state: "paused" (error: none)
+20:41:38.263: [pipewire] Negotiated format:
+20:41:38.263: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:41:38.263: [pipewire]     Modifier: 0x0
+20:41:38.263: [pipewire]     Size: 2560x1440
+20:41:38.263: [pipewire]     Framerate: 0/1
+20:41:38.263: [pipewire] Negotiated format:
+20:41:38.263: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+20:41:38.263: [pipewire]     Modifier: 0x300000000e08014
+20:41:38.263: [pipewire]     Size: 2560x1440
+20:41:38.263: [pipewire]     Framerate: 0/1
+20:41:38.264: [pipewire] Stream 0x55e0374d1a80 state: "streaming" (error: none)
+20:41:48.117: NV12 texture support not available
+20:41:48.117: P010 texture support not available

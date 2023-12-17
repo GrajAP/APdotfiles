@@ -1,14 +1,14 @@
 {
     "notifyAboutUpdates": true,
-    "autoUpdate": false,
+    "autoUpdate": true,
     "autoUpdateNotification": true,
     "useQuickCss": true,
     "themeLinks": [
         "https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css"
     ],
     "enabledThemes": [],
-    "enableReactDevtools": false,
-    "frameless": false,
+    "enableReactDevtools": true,
+    "frameless": true,
     "transparent": false,
     "winCtrlQ": false,
     "macosTranslucency": false,
@@ -454,6 +454,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1701377501561
+        "settingsSyncVersion": 1701801779202
     }
 }

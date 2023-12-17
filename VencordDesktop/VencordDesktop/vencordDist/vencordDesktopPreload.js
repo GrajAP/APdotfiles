@@ -1,4 +1,4 @@
-// Vencord 6573c47
+// Vencord 534ca1e
 // Standalone: true
 // Platform: Universal
 // Updater disabled: false

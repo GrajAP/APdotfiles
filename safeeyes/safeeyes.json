@@ -16,7 +16,7 @@
     "persist_state": true,
     "plugins": [
         {
-            "enabled": false,
+            "enabled": true,
             "id": "donotdisturb",
             "settings": {
                 "skip_break_windows": "",
@@ -68,7 +68,7 @@
             "version": "0.0.3"
         },
         {
-            "enabled": false,
+            "enabled": true,
             "id": "smartpause",
             "settings": {
                 "idle_time": 5,
@@ -87,7 +87,7 @@
             "version": "0.0.2"
         },
         {
-            "enabled": false,
+            "enabled": true,
             "id": "healthstats",
             "settings": {
                 "statistics_reset_cron": "0 0 * * *"
@@ -97,6 +97,15 @@
         {
             "enabled": true,
             "id": "mediacontrol",
+            "version": "0.0.1"
+        },
+        {
+            "enabled": true,
+            "id": "weather",
+            "settings": {
+                "api": "",
+                "location": "Warsaw,Poland"
+            },
             "version": "0.0.1"
         }
     ],
