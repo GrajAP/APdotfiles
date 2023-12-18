@@ -461,3 +461,17 @@
 2023-12-18T00:26:15.265Z 8: window.close win1
 2023-12-18T00:26:15.275Z 9: webContents.destroyed web1
 2023-12-18T00:26:15.277Z 10: window.closed win1
+2023-12-18T00:44:32.073Z 11: before-quit
+2023-12-18T07:56:02.023Z 0: 
+
+----------------------------------------------
+2023-12-18T07:56:02.378Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.38"}, modulepath: /home/grajap/.config/discord/0.0.38/modules
+2023-12-18T07:56:02.505Z 2: ✅ webContents.created web1 ""
+2023-12-18T07:56:02.508Z 3: ✅ window.created win1 "discord"
+2023-12-18T07:56:02.789Z 4: ✅ webContents.did-finish-load web1
+2023-12-18T07:56:03.064Z 5: ✅ webContents.created web2 ""
+2023-12-18T07:56:03.080Z 6: ✅ window.created win2 "Discord"
+2023-12-18T07:56:05.101Z 7: ✅ webContents.did-finish-load web2
+2023-12-18T07:56:05.200Z 8: window.close win1
+2023-12-18T07:56:05.210Z 9: webContents.destroyed web1
+2023-12-18T07:56:05.237Z 10: window.closed win1
