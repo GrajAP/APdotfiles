@@ -2,7 +2,7 @@
     "break": "Przewr\u00f3\u0107 oczy zgodnie z ruchem wskaz\u00f3wek zegara",
     "plugin": {
         "healthstats": {
-            "last_screen_time": 18,
+            "last_screen_time": 86,
             "next_reset_time": "2023-12-19 00:00:00",
             "no_of_breaks": 0,
             "no_of_skipped_breaks": 0,
