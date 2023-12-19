@@ -1,0 +1,13 @@
+{
+    "break": "Zamrugaj oczami",
+    "plugin": {
+        "healthstats": {
+            "last_screen_time": 1010,
+            "next_reset_time": "2023-12-20 00:00:00",
+            "no_of_breaks": 0,
+            "no_of_skipped_breaks": 0,
+            "safe_eyes_start_time": "2023-12-19 00:00:00",
+            "total_idle_time": 0
+        }
+    }
+}

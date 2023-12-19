@@ -19,8 +19,8 @@
 */
 
 .window_main {
-    background: black;
-    opacity: 0.9;
+    background: #11111b;
+    opacity: 0.8;
     border-color: transparent;
 }
 
@@ -44,8 +44,8 @@
 }
 
 .btn_postpone {
-    color: white;
-    font-size: 10pt;
+    color: #cba6f7;
+    font-size: 18pt;
     border-radius: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -64,18 +64,18 @@
 
 .lbl_message {
     font-size: 22pt;
-    color: white;
+    color: #cba6f7;
     font-weight: bold;
 }
 
 .lbl_count {
     font-size: 12pt;
-    color: white;
+    color: #cba6f7;
 }
 
 .lbl_widget {
     font-size: 9pt;
-    color: white;
+    color: #cba6f7;
 }
 
 .btn_circle {
@@ -87,7 +87,7 @@
 }
 
 .lbl_plugin_description {
-    color: #9B9B9B;
+    color: #cba6f7;
 }
 
 .info_bar_long_break {
