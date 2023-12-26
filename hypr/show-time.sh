@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/zsh
 
-now="$(date +%R)"
- notify-send -t 1000 $now
+time="$(date +%X)"
+day="$(date +%a\ %d\ %b\ %Y)"
+notify-send -t 3000 -a Time -c Time "$time
+$day"
+
