@@ -1,0 +1,1 @@
+{"rustc":10585326275085084097,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[7333356460339158070,"build_script_build",false,1033765137316855059]],"local":[{"RerunIfChanged":{"output":"debug/build/libc-faac4a6d4e1d70e2/output","paths":["build.rs"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

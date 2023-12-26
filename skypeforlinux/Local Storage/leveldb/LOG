@@ -1,0 +1,5 @@
+2023/12/20-18:46:25.163 6478 Creating DB /home/grajap/.config/skypeforlinux/Local Storage/leveldb since it was missing.
+2023/12/20-18:46:25.179 6478 Reusing MANIFEST /home/grajap/.config/skypeforlinux/Local Storage/leveldb/MANIFEST-000001
+2023/12/20-18:47:25.548 6490 Level-0 table #5: started
+2023/12/20-18:47:25.571 6490 Level-0 table #5: 116522 bytes OK
+2023/12/20-18:47:25.574 6490 Delete type=0 #3
