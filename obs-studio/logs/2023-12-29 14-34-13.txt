@@ -1,0 +1,127 @@
+14:34:13.791: Platform: Wayland
+14:34:13.791: CPU Name: AMD Ryzen 9 5900X 12-Core Processor
+14:34:13.791: CPU Speed: 3836.129MHz
+14:34:13.791: Physical Cores: 12, Logical Cores: 24
+14:34:13.791: Physical Memory: 32034MB Total, 25248MB Free
+14:34:13.791: Kernel Version: Linux 6.6.8-zen1-1-zen
+14:34:13.791: Distribution: "Arch Linux" Unknown
+14:34:13.791: Desktop Environment: Hyprland ()
+14:34:13.791: Session Type: wayland
+14:34:13.793: Qt Version: 6.6.1 (runtime), 6.6.1 (compiled)
+14:34:13.793: Portable mode: false
+14:34:13.834: OBS 30.0.2-1 (linux)
+14:34:13.834: ---------------------------------
+14:34:13.835: ---------------------------------
+14:34:13.835: audio settings reset:
+14:34:13.835: 	samples per sec: 48000
+14:34:13.835: 	speakers:        2
+14:34:13.835: 	max buffering:   960 milliseconds
+14:34:13.835: 	buffering type:  dynamically increasing
+14:34:13.836: ---------------------------------
+14:34:13.836: Initializing OpenGL...
+14:34:13.836: Using EGL/Wayland
+14:34:13.865: Initialized EGL 1.5
+14:34:13.875: Loading up OpenGL on adapter AMD AMD Radeon RX 580 Series (radeonsi, polaris10, LLVM 16.0.6, DRM 3.54, 6.6.8-zen1-1-zen)
+14:34:13.875: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.3.1-arch1.1, shading language 4.60
+14:34:13.897: ---------------------------------
+14:34:13.897: video settings reset:
+14:34:13.897: 	base resolution:   2560x1440
+14:34:13.897: 	output resolution: 2560x1440
+14:34:13.897: 	downscale filter:  Bicubic
+14:34:13.897: 	fps:               60/1
+14:34:13.897: 	format:            NV12
+14:34:13.897: 	YUV mode:          Rec. 709/Partial
+14:34:13.897: NV12 texture support not available
+14:34:13.897: P010 texture support not available
+14:34:13.899: Audio monitoring device:
+14:34:13.899: 	name: Domyślne
+14:34:13.899: 	id: default
+14:34:13.899: ---------------------------------
+14:34:13.906: Failed to load 'en-US' text for module: 'decklink-captions.so'
+14:34:13.912: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+14:34:13.919: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+14:34:13.919: Failed to initialize module 'decklink.so'
+14:34:14.023: [pipewire] Available captures:
+14:34:14.023: [pipewire]     - Desktop capture
+14:34:14.023: [pipewire]     - Window capture
+14:34:14.075: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+14:34:14.075: FFmpeg VAAPI H264 encoding not supported
+14:34:14.075: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+14:34:14.075: FFmpeg VAAPI HEVC encoding not supported
+14:34:14.152: ---------------------------------
+14:34:14.152:   Loaded Modules:
+14:34:14.152:     text-freetype2.so
+14:34:14.152:     rtmp-services.so
+14:34:14.152:     obs-x264.so
+14:34:14.152:     obs-vst.so
+14:34:14.152:     obs-transitions.so
+14:34:14.152:     obs-qsv11.so
+14:34:14.152:     obs-outputs.so
+14:34:14.152:     obs-libfdk.so
+14:34:14.152:     obs-filters.so
+14:34:14.152:     obs-ffmpeg.so
+14:34:14.152:     linux-v4l2.so
+14:34:14.152:     linux-pulseaudio.so
+14:34:14.152:     linux-pipewire.so
+14:34:14.152:     linux-jack.so
+14:34:14.152:     linux-capture.so
+14:34:14.152:     linux-alsa.so
+14:34:14.152:     image-source.so
+14:34:14.152:     frontend-tools.so
+14:34:14.152:     decklink-output-ui.so
+14:34:14.152:     decklink-captions.so
+14:34:14.152: ---------------------------------
+14:34:14.152: QWidget::setTabOrder: 'first' and 'second' must be in the same window
+14:34:14.152: ==== Startup complete ===============================================
+14:34:14.178: All scene data cleared
+14:34:14.178: ------------------------------------------------
+14:34:14.182: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.0) 15.0.0'
+14:34:14.182: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+14:34:14.182: pulse-input: Started recording from 'alsa_output.usb-JBL_JBL_Quantum350_Wireless_20190706.1-00.analog-stereo.monitor' (default)
+14:34:14.182: [Loaded global audio device]: 'Urządzenie audio'
+14:34:14.182: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.0) 15.0.0'
+14:34:14.183: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+14:34:14.183: pulse-input: Started recording from 'alsa_input.usb-Generic_Blue_Microphones_2108BAB0EPP8-00.analog-stereo' (default)
+14:34:14.183: [Loaded global audio device]: 'Mikrofon/Wejście liniowe'
+14:34:14.183: PipeWire initialized
+14:34:14.183: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.0) 15.0.0'
+14:34:14.183: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+14:34:14.183: pulse-input: Started recording from 'alsa_output.usb-JBL_JBL_Quantum350_Wireless_20190706.1-00.analog-stereo.monitor'
+14:34:14.184: Switched to scene 'Scena'
+14:34:14.184: ------------------------------------------------
+14:34:14.184: Loaded scenes:
+14:34:14.184: - scene 'Scena':
+14:34:14.184:     - source: 'Przechwytywanie ekranu (PipeWire)' (pipewire-desktop-capture-source)
+14:34:14.184:     - source: 'Przechwytywanie wyjścia dźwięku (PulseAudio)' (pulse_output_capture)
+14:34:14.184: ------------------------------------------------
+14:34:14.206: [pipewire] Screencast session created
+14:34:14.731: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Mikrofon/Wejście liniowe)
+14:34:14.731: 
+14:34:14.774: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Przechwytywanie wyjścia dźwięku (PulseAudio))
+14:34:14.774: 
+14:34:15.633: [pipewire] Asking for desktop
+14:34:15.634: [pipewire] desktop selected, setting up screencast
+14:34:15.639: [pipewire] Server version: 1.0.0
+14:34:15.639: [pipewire] Library version: 1.0.0
+14:34:15.639: [pipewire] Header version: 1.0.0
+14:34:15.639: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+14:34:15.639: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+14:34:15.639: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+14:34:15.639: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+14:34:15.639: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+14:34:15.639: bmalloc: Allocating 0 bytes is broken behavior, please fix your code! This will crash in future versions of OBS.
+14:34:15.639: [pipewire] Created stream 0x562847ee7c70
+14:34:15.639: [pipewire] Stream 0x562847ee7c70 state: "connecting" (error: none)
+14:34:15.639: [pipewire] Playing stream 0x562847ee7c70
+14:34:15.639: [pipewire] Stream 0x562847ee7c70 state: "paused" (error: none)
+14:34:15.641: [pipewire] Negotiated format:
+14:34:15.641: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+14:34:15.641: [pipewire]     Modifier: 0x0
+14:34:15.641: [pipewire]     Size: 2560x1440
+14:34:15.641: [pipewire]     Framerate: 0/1
+14:34:15.641: [pipewire] Negotiated format:
+14:34:15.641: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+14:34:15.641: [pipewire]     Modifier: 0xffffffffffffff
+14:34:15.641: [pipewire]     Size: 2560x1440
+14:34:15.641: [pipewire]     Framerate: 0/1
+14:34:15.642: [pipewire] Stream 0x562847ee7c70 state: "streaming" (error: none)
