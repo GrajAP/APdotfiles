@@ -4,7 +4,9 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	
 	use 'wbthomason/packer.nvim'
-	
+    use 'williamboman/nvim-lsp-installer'
+    use 'neovim/nvim-lspconfig'
+    use 'slint-ui/vim-slint'	
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		-- or                            , branch = '0.1.x',
@@ -41,7 +43,7 @@ return require('packer').startup(function(use)
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
 	use("nvim-treesitter/nvim-treesitter-context");
-use {
+    use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
 	  requires = {

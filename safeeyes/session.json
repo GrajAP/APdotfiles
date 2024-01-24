@@ -1,10 +1,10 @@
 {
-    "break": "Zamrugaj oczami",
+    "break": "Dok\u0142adnie zamknij oczy",
     "plugin": {
         "healthstats": {
-            "last_screen_time": 48213,
-            "next_reset_time": "2024-01-22 00:00:00",
-            "no_of_breaks": 1,
+            "last_screen_time": 52884,
+            "next_reset_time": "2024-01-25 00:00:00",
+            "no_of_breaks": 9,
             "no_of_skipped_breaks": 0,
             "safe_eyes_start_time": "2023-12-19 00:00:00",
             "total_idle_time": 0

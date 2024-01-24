@@ -1,12 +1,12 @@
 [global]
 frame_color = "#cba6f7"
 separator_color = "#cba6f7"
-width = 300
+width = 200
 height = 280
-offset = "0x15"
+offset = "0x25"
 font = "Lexend 12"
-corner_radius = 24
-origin = "top-rigth"
+corner_radius = 20
+origin = "top-right"
 notification_limit = 3
 idle_threshold = 120
 ignore_newline = "no"

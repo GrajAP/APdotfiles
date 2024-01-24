@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/grajap/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/grajap/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/grajap/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -205,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/grajap/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-slint"] = {
+    loaded = true,
+    path = "/home/grajap/.local/share/nvim/site/pack/packer/start/vim-slint",
+    url = "https://github.com/slint-ui/vim-slint"
   },
   ["zen-mode.nvim"] = {
     loaded = true,
