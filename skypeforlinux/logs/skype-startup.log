@@ -1,0 +1,11 @@
+[24150:0128/161045.517700:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: Brak interfejsu „org.freedesktop.portal.FileChooser”
+[24150:0128/161045.517750:ERROR:select_file_dialog_linux_portal.cc(242)] Failed to read portal version property
+Error occurred in handler for 'keychain:get-password': Error: No stored credentials fetched from keytar.
+    at /usr/share/skypeforlinux/resources/app.asar/main.js:2:515460
+    at async node:electron/js2c/browser_init:193:551
+Error occurred in handler for 'keychain:get-password': Error: No stored credentials fetched from keytar.
+    at /usr/share/skypeforlinux/resources/app.asar/main.js:2:515460
+    at async node:electron/js2c/browser_init:193:551
+Error occurred in handler for 'keychain:get-password': Error: No stored credentials fetched from keytar.
+    at /usr/share/skypeforlinux/resources/app.asar/main.js:2:515460
+    at async node:electron/js2c/browser_init:193:551
