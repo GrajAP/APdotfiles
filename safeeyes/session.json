@@ -1,10 +1,10 @@
 {
-    "break": "Przewr\u00f3\u0107 oczy zgodnie z ruchem wskaz\u00f3wek zegara",
+    "break": "Dok\u0142adnie zamknij oczy",
     "plugin": {
         "healthstats": {
             "last_screen_time": 609,
             "next_reset_time": "2024-02-02 00:00:00",
-            "no_of_breaks": 14,
+            "no_of_breaks": 15,
             "no_of_skipped_breaks": 0,
             "safe_eyes_start_time": "2024-02-01 00:00:00",
             "total_idle_time": 0
