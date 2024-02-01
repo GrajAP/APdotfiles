@@ -1,6 +1,0 @@
-2024/01/31-22:04:30.313 70b Reusing MANIFEST /home/grajap/.config/Caprine/Local Storage/leveldb/MANIFEST-000001
-2024/01/31-22:04:30.315 70b Recovering log #7
-2024/01/31-22:04:30.317 70b Reusing old log /home/grajap/.config/Caprine/Local Storage/leveldb/000007.log 
-2024/01/31-23:51:31.746 70d Level-0 table #11: started
-2024/01/31-23:51:31.752 70d Level-0 table #11: 10139 bytes OK
-2024/01/31-23:51:31.755 70d Delete type=0 #7
